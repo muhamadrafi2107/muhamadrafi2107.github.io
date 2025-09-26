@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vCard - Personal Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/Untitled design.jpg"
+              alt="Muhamad Rafi Alfian"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Muhamad Rafi Alfian">
+              Muhamad Rafi Alfian
+            </h1>
+
+            <p class="title">Teknologi Informasi</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=rafialfian2004@gmail.com"
+                  class="contact-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  rafialfian2004@gmail.com
+                </a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+12133522795" class="contact-link"
+                  >+62 81818453338</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">21 Juli 2003</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Kota Bekasi, Bekasi Selatan</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/rafi-alfian21"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>Tentang</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Pendidikan</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="tentang">
+          <header>
+            <h2 class="h2 article-title">Tentang</h2>
+          </header>
+
+          <section class="about-text">
+            <p style="text-align: justify">
+              Fresh graduate dari Universitas Gunadarma jurusan Sistem
+              Informasi. Aktif dalam kegiatan akademik maupun non-akademik,
+              serta memiliki ketertarikan dalam dunia pengembangan web. Saya
+              percaya bahwa web adalah platform yang kuat untuk menyampaikan
+              informasi, membangun aplikasi inovatif, dan menghubungkan orang
+              orang di seluruh dunia. Saya menemukan kepuasan dalam menciptakan
+              solusi yang efisien dan elegan untuk permasalahan kompleks dalam
+              pengembangan perangkat lunak. Selain itu, saya menikmati bekerja
+              dalam tim dan termotivasi oleh proses kolaboratif dalam membangun
+              aplikasi web. Saya juga senang berbagi pengetahuan dan pengalaman
+              dengan rekan tim, sekaligus terus belajar dari mereka.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">Project</h3>
+
+            <section class="blog-posts">
+              <ul class="blog-posts-list">
+                <li class="blog-post-item">
+                  <a href="#">
+                    <figure class="blog-banner-box">
+                      <img
+                        src="./assets/images/blog-1.jpg"
+                        alt="Design conferences in 2022"
+                        loading="lazy"
+                      />
+                    </figure>
+
+                    <div class="blog-content">
+                      <div class="blog-meta"></div>
+
+                      <h3 class="h3 blog-item-title">
+                        Design conferences in 2022
+                      </h3>
+
+                      <p class="blog-text">
+                        Veritatis et quasi architecto beatae vitae dicta sunt,
+                        explicabo.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="blog-post-item">
+                  <a href="#">
+                    <figure class="blog-banner-box">
+                      <img
+                        src="./assets/images/blog-2.jpg"
+                        alt="Best fonts every designer"
+                        loading="lazy"
+                      />
+                    </figure>
+
+                    <div class="blog-content">
+                      <div class="blog-meta"></div>
+
+                      <h3 class="h3 blog-item-title">
+                        Best fonts every designer
+                      </h3>
+
+                      <p class="blog-text">
+                        Sed ut perspiciatis, nam libero tempore, cum soluta
+                        nobis est eligendi.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="blog-post-item">
+                  <a href="#">
+                    <figure class="blog-banner-box">
+                      <img
+                        src="./assets/images/blog-3.jpg"
+                        alt="Design digest #80"
+                        loading="lazy"
+                      />
+                    </figure>
+
+                    <div class="blog-content">
+                      <div class="blog-meta"></div>
+
+                      <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                      <p class="blog-text">
+                        Excepteur sint occaecat cupidatat no proident, quis
+                        nostrum exercitationem ullam corporis suscipit.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="blog-post-item">
+                  <a href="#">
+                    <figure class="blog-banner-box">
+                      <img
+                        src="./assets/images/blog-4.jpg"
+                        alt="UI interactions of the week"
+                        loading="lazy"
+                      />
+                    </figure>
+
+                    <div class="blog-content">
+                      <div class="blog-meta"></div>
+
+                      <h3 class="h3 blog-item-title">
+                        UI interactions of the week
+                      </h3>
+
+                      <p class="blog-text">
+                        Enim ad minim veniam, consectetur adipiscing elit, quis
+                        nostrud exercitation ullamco laboris nisi.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </section>
+          </div>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="pendidikan">
+          <header>
+            <h2 class="h2 article-title">Pendidikan</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Pendidikan</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Universitas Gunadarma</h4>
+
+                <span>2021 — 2025</span>
+
+                <p class="timeline-text">Sarjana Sistem Informasi</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">SMK Negeri 1 Kota Bekasi</h4>
+
+                <span>2018 — 2021</span>
+
+                <p class="timeline-text">Jurusan Rekayasa Perangkat Lunak</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Magang</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">PT Satria Antaran Prima</h4>
+
+                <span>September 2024 — September 2024</span>
+
+                <p class="timeline-text">Web Developer</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">PT Siklus Id</h4>
+
+                <span>Oktober 2019 — Maret 2020</span>
+
+                <p class="timeline-text">Web Developer</p>
+              </li>
+            </ol>
+          </section>
+          <a
+            href="./assets/pdf/CV_Muhamad Rafi Alfian.pdf"
+            class="form-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ion-icon name="document-text"></ion-icon>
+            <span>CV</span>
+          </a>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
